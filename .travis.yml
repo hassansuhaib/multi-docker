@@ -11,7 +11,7 @@ script:
 
 after_success:
   - docker build -t hassansuhaib/multi-client ./client
-  - docker build -t hassansuhaib/mutli-nginx ./nginx
+  - docker build -t hassansuhaib/multi-nginx ./nginx
   - docker build -t hassansuhaib/multi-server ./server
   - docker build -t hassansuhaib/multi-worker ./worker
   # Login to the docker CLI
